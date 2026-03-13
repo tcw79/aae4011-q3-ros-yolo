@@ -166,9 +166,11 @@ https://www.youtube.com/watch?v=Vlp0e89TXpI
 ​5. The Construct. (2022, November 17). What is rosbag? How to record and playback ROS topics [Blog post]. The Construct Sim. 
 https://www.theconstruct.ai/ros-5-mins-045-rosbag-record-playback-ros-topics/
 ​
+
 6. GitHub. (n.d.). Managing your personal access tokens [Documentation]. GitHub Docs. 
 https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens
 ​
+
 7. GitHub. (2024). Dealing with non-fast-forward errors [Documentation]. GitHub Docs. 
 https://docs.github.com/en/get-started/using-git/dealing-with-non-fast-forward-errors
 ​
