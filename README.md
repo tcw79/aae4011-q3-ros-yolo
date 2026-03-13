@@ -104,6 +104,7 @@ Terminal 3: play the rosbag so frames are published to the image topic
   During the sequence, the detector identifies multiple vehicles (cars, buses, and trucks) in front of the camera.  
   This ROS code generates some bounding boxes around the vehicles with class labels and confidence scores.  
   A small number of vehicles may occasionally be missed due to distance and small pixels.
+  A small number of vehicles may be identified wrongly as a bus identified as a truck.
 
 ---
 
