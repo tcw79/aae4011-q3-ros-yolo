@@ -1,0 +1,8 @@
+prefix=/home/user/catkin_ws/install
+
+Name: aae4011_ai_uas
+Description: Description of aae4011_ai_uas
+Version: 1.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: rospy std_msgs sensor_msgs geometry_msgs

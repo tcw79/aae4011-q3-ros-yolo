@@ -1,0 +1,7 @@
+set(aae4011_ai_uas_SETUP_PY_SETUP_MODULE "distutils.core")
+set(aae4011_ai_uas_SETUP_PY_VERSION "1.0.0")
+set(aae4011_ai_uas_SETUP_PY_SCRIPTS "")
+set(aae4011_ai_uas_SETUP_PY_PACKAGES "aae4011_ai_uas")
+set(aae4011_ai_uas_SETUP_PY_PACKAGE_DIRS "src/aae4011_ai_uas")
+set(aae4011_ai_uas_SETUP_PY_MODULES "")
+set(aae4011_ai_uas_SETUP_PY_MODULE_DIRS "")
