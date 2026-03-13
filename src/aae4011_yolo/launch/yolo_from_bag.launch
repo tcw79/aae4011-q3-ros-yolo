@@ -1,0 +1,15 @@
+<launch>
+  <node pkg="aae4011_yolo"
+        type="yolo_node.py"
+        name="aae4011_yolo_node"
+        output="screen">
+
+    <!-- Path to your YOLO model weights (.pt file).
+         Change /home/user if your Ubuntu username is different. -->
+    <param name="model_path" value="/home/user/models/yolov8n.pt" />
+
+    <!-- Image topic from your rosbag (you saw this with rostopic list). -->
+    <param name="image_topic" value="/hikcamera/image_2/compressed" />
+
+  </node>
+</launch>
