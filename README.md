@@ -102,7 +102,7 @@ Terminal 3: play the rosbag so frames are published to the image topic
 - **Detection results**
 
   During the sequence, the detector identifies multiple vehicles (cars, buses, and trucks) in front of the camera.  
-  Bounding boxes are shown around the vehicles with class labels and confidence scores, and these are visible in the image viewer while the rosbag is playing.  
+  This ROS code generates some bounding boxes around the vehicles with class labels and confidence scores.  
   A small number of vehicles may occasionally be missed due to distance and small pixels.
 
 ---
