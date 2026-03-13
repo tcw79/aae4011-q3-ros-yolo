@@ -162,7 +162,6 @@ In addition, it may require careful handling of false positives and missed detec
 ---
 
 ## 9. References
-
 1. Ultralytics. (2022). Ultralytics YOLO [Computer software]. GitHub. https://github.com/ultralytics/ultralytics
 
 ​
