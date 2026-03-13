@@ -132,7 +132,7 @@ I also gained practical experience with Git and GitHub, including making and edi
 
 I used AI assistants (mainly Perplexity) to help with environment setup, Git problems, and documentation.  
 It guided me when I could not push to GitHub, suggested specific commands such as `git remote set-url`, `git fetch origin`, and `git rebase origin/main`, and helped me fix the errors during the ROS coding.  
-AI support saved time when I forgot the exact ROS or Git syntax, but I still had to run all commands, debug errors in my own terminal, and check that the final behaviour of the node and rosbag playback matched the course expectations.  
+AI support saved time when I forgot the exact ROS or Git syntax, but I still had to run all commands, debug errors in my own terminal, and check that the final behaviour of the node and rosbag playback matched the expectations.  
 
 ### (c) How to Improve Accuracy? 
 
