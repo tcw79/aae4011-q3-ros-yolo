@@ -14,6 +14,7 @@ This project is about a ROS‑based pipeline that reads images from a rosbag, ru
 ## 2. Detection Method
 
 I used a YOLO‑based detector ( YOLOv8n ) running as a ROS node that subscribes to the camera image topic from the rosbag.  
+
 The model was chosen because pretrained weights are available for general road scenes, it runs in real time on a GPU/CPU suitable for student laptops, and it has good accuracy for cars, buses and trucks. It is also easier to understand. 
 
 The node performs the following steps:
@@ -96,14 +97,18 @@ Terminal 3: play the rosbag so frames are published to the image topic
 
 - **Image extraction summary**
 
-  The rosbag contains a short driving sequence with front‑view road images recorded from the vehicle camera.  
+  The rosbag contains a short driving sequence with front‑view road images recorded from the vehicle camera.
+  
   Frames are read from the camera image topic and passed into the `aae4011_yolo` node, which runs YOLO on each frame as the bag plays in real time.  
 
 - **Detection results**
 
-  During the sequence, the detector identifies multiple vehicles (cars, buses, and trucks) in front of the camera.  
-  This ROS code generates some bounding boxes around the vehicles with class labels and confidence scores.  
+  During the sequence, the detector identifies multiple vehicles (cars, buses, and trucks) in front of the camera.
+  
+  This ROS code generates some bounding boxes around the vehicles with class labels and confidence scores.
+  
   A small number of vehicles may occasionally be missed due to distance and small pixels.
+  
   A small number of vehicles may be identified wrongly as a bus identified as a truck.
 
 ---
@@ -126,24 +131,31 @@ The 1–3 minute video demonstrates the full pipeline as follows:
 ### (a) What Did You Learn? 
 
 Through this task, I learned how to integrate a deep learning detector into ROS and run it on recorded rosbag data. There were a lot of errors that appeared when I was inputting any codes that were useful, such as missed downloads, missed files and more.
+
 I became more familiar with setting up a catkin workspace, adding a custom package, and using multiple terminals to manage `roscore`, rosbag playback, and the detection node.  
+
 I also gained practical experience with Git and GitHub, including making and editing a repo, configuring remotes, resolving non‑fast‑forward push errors with `git fetch` and `git rebase`, and using personal access tokens for authentication.
 
 ### (b) How Did You Use AI Tools? 
 
 I used AI assistants (mainly Perplexity) to help with environment setup, Git problems, and documentation.  
+
 It guided me when I could not push to GitHub, suggested specific commands such as `git remote set-url`, `git fetch origin`, and `git rebase origin/main`, and helped me fix the errors during the ROS coding.  
+
 AI support saved time when I forgot the exact ROS or Git syntax, but I still had to run all commands, debug errors in my own terminal, and check that the final behaviour of the node and rosbag playback matched the expectations.  
 
 ### (c) How to Improve Accuracy? 
 
 To improve detection accuracy, I think it needs to fine‑tune the YOLO model on data. For example, by labelling additional frames with vehicles in similar lighting and traffic conditions, to reduce the chances of missing vehicles.  
+
 A second improvement is to adjust inference settings, such as using a larger input resolution or a higher‑capacity model, and carefully tuning confidence and non‑maximum‑suppression thresholds so that obvious false positives are filtered out.
 
 ### (d) Real‑World Challenges 
 
-A YOLO model may not reach real‑time frame rates without optimisation or hardware accelerators.  
+A YOLO model may not reach real‑time frame rates without optimisation or hardware accelerators. 
+
 Another challenge is consistency: real‑world driving introduces motion blur, changing illumination, weather effects, and more, so the detector must remain reliable under conditions that are clean rosbag recording.  
+
 In addition, it may require careful handling of false positives and missed detections to avoid unsafe behaviour.
 
 
