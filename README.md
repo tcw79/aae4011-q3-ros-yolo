@@ -163,7 +163,8 @@ http://wiki.ros.org/image_transport
 4. ROBOMECHTRIX. (2021, February 6). Rosbags | ROS tutorial for beginners [Video]. YouTube. 
 https://www.youtube.com/watch?v=Vlp0e89TXpI
  
-​5. The Construct. (2022, November 17). What is rosbag? How to record and playback ROS topics [Blog post]. The Construct Sim. 
+
+ ​5. The Construct. (2022, November 17). What is rosbag? How to record and playback ROS topics [Blog post]. The Construct Sim. 
 https://www.theconstruct.ai/ros-5-mins-045-rosbag-record-playback-ros-topics/
 ​
 
